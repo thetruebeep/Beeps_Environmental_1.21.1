@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "beepsenvironmentalmod:block/rose_wood_leaf"
+  }
+}

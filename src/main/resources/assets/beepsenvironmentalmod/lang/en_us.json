@@ -1,0 +1,14 @@
+{
+  "item.beepsenvironmentalmod.rawchromium": "Raw Chromium",
+  "item.beepsenvironmentalmod.chromium": "Chromium Ingot",
+  "item.beepsenvironmentalmod.infested_string": "Infested String",
+
+
+
+
+  "block.beepsenvironmentalmod.chromium_block": "Block of Chromium",
+  "block.beepsenvironmentalmod.rose_wood_leaf": "Rose Wood Leaf",
+  "block.beepsenvironmentalmod.infected_rose_wood_leaf": "Infected Rose Wood Leaf",
+
+  "creativetab.beepsenvironmentalmod.beeps_environmental":"Beep's Environmental"
+}

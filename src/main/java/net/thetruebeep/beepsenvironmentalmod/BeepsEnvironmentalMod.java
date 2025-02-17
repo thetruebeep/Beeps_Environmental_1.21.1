@@ -1,6 +1,7 @@
 package net.thetruebeep.beepsenvironmentalmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,6 +14,9 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.thetruebeep.beepsenvironmentalmod.block.ModBlocks;
+import net.thetruebeep.beepsenvironmentalmod.item.ModCreativeTabs;
+import net.thetruebeep.beepsenvironmentalmod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -33,6 +37,13 @@ public class BeepsEnvironmentalMod
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        ModCreativeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -45,6 +56,16 @@ public class BeepsEnvironmentalMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.R_CHROMIUM);
+            event.accept((ModItems.CHROMIUM));
+            event.accept((ModItems.INFESTED_STRING));
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CHROMIUM_BLOCK);
+            event.accept(ModBlocks.INFECTED_ROSE_WOOD_LEAF);
+            event.accept(ModBlocks.ROSE_WOOD_LEAF);
+        }
 
     }
 
