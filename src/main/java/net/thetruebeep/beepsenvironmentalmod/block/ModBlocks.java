@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thetruebeep.beepsenvironmentalmod.BeepsEnvironmentalMod;
+import net.thetruebeep.beepsenvironmentalmod.block.custom.DeactivatedExchanger;
 import net.thetruebeep.beepsenvironmentalmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -49,6 +50,13 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.CHERRY_LEAVES)
+            ));
+
+    public static final DeferredBlock<Block> DEACTIVATED_EXCHANGER = registerBlock("deactivated_exchanger",
+            () -> new DeactivatedExchanger(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.ANVIL)
             ));
 
 

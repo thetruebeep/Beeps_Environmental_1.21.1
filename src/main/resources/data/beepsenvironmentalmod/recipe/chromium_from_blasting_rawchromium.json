@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1.6,
+  "group": "chromium",
+  "ingredient": {
+    "item": "beepsenvironmentalmod:rawchromium"
+  },
+  "result": {
+    "id": "beepsenvironmentalmod:chromium"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "beepsenvironmentalmod:block/deactivated_exchanger"
+    }
+  }
+}

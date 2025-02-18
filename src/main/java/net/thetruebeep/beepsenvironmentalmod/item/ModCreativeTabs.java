@@ -31,6 +31,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.ROSE_WOOD_LEAF);
                 output.accept(ModBlocks.CHROMIUM_ORE);
                 output.accept(ModBlocks.CHROMIUM_DEEPSLATE_ORE);
+                output.accept(ModBlocks.DEACTIVATED_EXCHANGER);
             })
 
 
