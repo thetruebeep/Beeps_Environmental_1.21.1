@@ -23,6 +23,20 @@ public class ModBlocks {
                     .sound(SoundType.METAL)
             ));
 
+    public static final DeferredBlock<Block> CHROMIUM_ORE = registerBlock("chromium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+            ));
+
+    public static final DeferredBlock<Block> CHROMIUM_DEEPSLATE_ORE = registerBlock("chromium_deepslate_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+            ));
+
     public static final DeferredBlock<Block> INFECTED_ROSE_WOOD_LEAF = registerBlock("infected_rose_wood_leaf",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)

@@ -29,6 +29,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.CHROMIUM_BLOCK);
                 output.accept(ModBlocks.INFECTED_ROSE_WOOD_LEAF);
                 output.accept(ModBlocks.ROSE_WOOD_LEAF);
+                output.accept(ModBlocks.CHROMIUM_ORE);
+                output.accept(ModBlocks.CHROMIUM_DEEPSLATE_ORE);
             })
 
 

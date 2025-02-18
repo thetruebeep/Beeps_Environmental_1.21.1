@@ -65,6 +65,8 @@ public class BeepsEnvironmentalMod
             event.accept(ModBlocks.CHROMIUM_BLOCK);
             event.accept(ModBlocks.INFECTED_ROSE_WOOD_LEAF);
             event.accept(ModBlocks.ROSE_WOOD_LEAF);
+            event.accept(ModBlocks.CHROMIUM_ORE);
+            event.accept(ModBlocks.CHROMIUM_DEEPSLATE_ORE);
         }
 
     }
