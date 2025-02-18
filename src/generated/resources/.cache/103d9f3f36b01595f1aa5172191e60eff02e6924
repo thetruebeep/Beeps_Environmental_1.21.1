@@ -1,1 +1,4 @@
-// 1.21.1	2025-02-18T20:33:43.9174324	Registries
+// 1.21.1	2025-02-18T21:36:05.0686551	Registries
+641787774f19267bdfb6dee45ad06a8de6e7a6d6 data/beepsenvironmentalmod/neoforge/biome_modifier/add_chromium_ore.json
+400ed2df2329131bc2adb9ba43f9f2d8c3effe87 data/beepsenvironmentalmod/worldgen/configured_feature/chromium_ore.json
+ce8d194125c51886ecb3e45b1e6242654a11324d data/beepsenvironmentalmod/worldgen/placed_feature/chromium_ore_placed.json
