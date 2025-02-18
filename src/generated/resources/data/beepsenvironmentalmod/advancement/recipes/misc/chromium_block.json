@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chromium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beepsenvironmentalmod:chromium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "beepsenvironmentalmod:chromium_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chromium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "beepsenvironmentalmod:chromium_block"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rawchromium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "beepsenvironmentalmod:rawchromium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "beepsenvironmentalmod:chromium_from_smelting_rawchromium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rawchromium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "beepsenvironmentalmod:chromium_from_smelting_rawchromium"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "chromium",
+  "ingredient": {
+    "item": "beepsenvironmentalmod:chromium_deepslate_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "beepsenvironmentalmod:chromium"
+  }
+}
