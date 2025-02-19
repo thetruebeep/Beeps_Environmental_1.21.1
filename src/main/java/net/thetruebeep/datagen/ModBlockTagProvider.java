@@ -29,5 +29,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CHROMIUM_ORE.get())
                 .add(ModBlocks.CHROMIUM_DEEPSLATE_ORE.get());
 
+        tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ROSE_WOOD_LOG.get())
+                .add(ModBlocks.ROSE_WOOD_WOOD.get())
+                .add(ModBlocks.STRIPPED_ROSE_WOOD_LOG.get())
+                .add(ModBlocks.STRIPPED_ROSE_WOOD_WOOD.get());
     }
 }

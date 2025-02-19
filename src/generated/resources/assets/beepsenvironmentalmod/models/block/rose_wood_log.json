@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "beepsenvironmentalmod:block/rose_wood_log_top",
+    "side": "beepsenvironmentalmod:block/rose_wood_log"
+  }
+}
