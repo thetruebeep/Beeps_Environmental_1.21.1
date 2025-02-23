@@ -1,6 +1,7 @@
-// 1.21.1	2025-02-19T19:50:48.895142	Registries
+// 1.21.1	2025-02-23T13:25:05.0845604	Registries
 641787774f19267bdfb6dee45ad06a8de6e7a6d6 data/beepsenvironmentalmod/neoforge/biome_modifier/add_chromium_ore.json
 e26a91cf8e9f26e72d81d126d42b579ac0452628 data/beepsenvironmentalmod/neoforge/biome_modifier/add_tree_rose_wood.json
+2ee553b6dc77cb7afa9a8909ad605e24b46aeea9 data/beepsenvironmentalmod/neoforge/biome_modifier/spawn_froggy.json
 400ed2df2329131bc2adb9ba43f9f2d8c3effe87 data/beepsenvironmentalmod/worldgen/configured_feature/chromium_ore.json
 1fc2b7fe4d2d5a91187abbade95f799e20e007ce data/beepsenvironmentalmod/worldgen/configured_feature/rose_wood.json
 ce8d194125c51886ecb3e45b1e6242654a11324d data/beepsenvironmentalmod/worldgen/placed_feature/chromium_ore_placed.json
