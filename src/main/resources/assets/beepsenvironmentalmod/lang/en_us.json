@@ -3,6 +3,8 @@
   "item.beepsenvironmentalmod.chromium": "Chromium Ingot",
   "item.beepsenvironmentalmod.infested_string": "Infested String",
 
+  "item.beepsenvironmentalmod.froggy_spawn_egg": "Desert Frog Spawn Egg",
+
   "block.beepsenvironmentalmod.chromium_block": "Block of Chromium",
   "block.beepsenvironmentalmod.chromium_ore": "Chromium Ore",
   "block.beepsenvironmentalmod.chromium_deepslate_ore": "Deepslate Chromium Ore",
@@ -22,5 +24,7 @@
 
   "tooltip.beepsenvironmentalmod.deactivated_exchanger.tooltip": "A useful §6magical§r block",
 
-  "enchantment.beepsenvironmentalmod.lightning_striker": "Striker"
+  "enchantment.beepsenvironmentalmod.lightning_striker": "Striker",
+
+  "entity.resource.froggy": "Desert Frog"
 }

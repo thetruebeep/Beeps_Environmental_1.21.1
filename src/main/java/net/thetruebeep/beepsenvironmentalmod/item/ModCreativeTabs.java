@@ -41,6 +41,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.CHROMIUM_ORE);
                 output.accept(ModBlocks.CHROMIUM_DEEPSLATE_ORE);
                 output.accept(ModBlocks.DEACTIVATED_EXCHANGER);
+
+                output.accept(ModItems.FROGGY_SPAWN_EGG);
             })
 
 

@@ -1,6 +1,7 @@
 package net.thetruebeep.beepsenvironmentalmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -15,6 +16,8 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.thetruebeep.beepsenvironmentalmod.block.ModBlocks;
+import net.thetruebeep.beepsenvironmentalmod.entity.ModEntities;
+import net.thetruebeep.beepsenvironmentalmod.entity.client.FroggyRenderer;
 import net.thetruebeep.beepsenvironmentalmod.item.ModCreativeTabs;
 import net.thetruebeep.beepsenvironmentalmod.item.ModItems;
 import org.slf4j.Logger;
@@ -42,6 +45,8 @@ public class BeepsEnvironmentalMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -82,6 +87,8 @@ public class BeepsEnvironmentalMod
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+            EntityRenderers.register(ModEntities.FROGGY.get(), FroggyRenderer::new);
 
         }
     }

@@ -18,6 +18,15 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroupByRegex("software\\.bernie.*")
+            includeGroup("com.eliotlash.mclib")
+        }
+
+    }
 }
 
 base {
@@ -112,6 +121,10 @@ configurations {
 }
 
 dependencies {
+    implementation ("software.bernie.geckolib:geckolib-forge-${minecraft_version}:4.7.3") {
+        exclude(group: "com.llamalad7", module: "mixinextras")
+    }
+    implementation("com.eliotlash.mclib:mclib:20")
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -179,6 +192,14 @@ publishing {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs(
+            "--add-exports=mixinextras.neoforge/com.llamalad7.mixinextras.injector.v2=ALL-UNNAMED"
+    )
+}
+
+
 
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
 idea {
